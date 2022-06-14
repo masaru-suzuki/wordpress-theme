@@ -1,0 +1,13 @@
+node_modules/
+npm-debug.log*
+vendor/
+.env
+
+/.wp-setup/.image-cache/
+/plugins/*
+!/plugins/.gitkeep
+/themes/index.php
+/themes/twenty*/
+/auth.json
+/wp-config.php
+/wp-remote-config.json

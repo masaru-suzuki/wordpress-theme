@@ -1,0 +1,39 @@
+{
+	"require": {
+		"wpackagist-plugin/wp-multibyte-patch": "^2.9"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org",
+			"only": [
+				"wpackagist-plugin/*",
+				"wpackagist-theme/*"
+			]
+		},
+		{
+			"type": "composer",
+			"url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-plugin/"
+		},
+		{
+			"type": "composer",
+			"url": "https://composer.admincolumns.com"
+		}
+	],
+	"extra": {
+		"installer-paths": {
+			"plugins/{$name}/": [
+				"type:wordpress-plugin"
+			],
+			"themes/{$name}/": [
+				"type:wordpress-theme"
+			]
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true,
+			"pivvenit/acf-pro-installer": true
+		}
+	}
+}
